@@ -1,6 +1,6 @@
 # Corgi-Snack-Attack-Game
 
-A cute Pac-Man-inspired browser game where a kawaii corgi collects snacks, dodges cats, and clears snack-filled maze levels.
+A cute Pac-Man-inspired browser game where a kawaii corgi collects snacks, dodges cats, and clears a snack-filled maze.
 
 ## Features
 - 5 playable levels
