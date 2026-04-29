@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corgi Snack Attack</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sky" aria-hidden="true">
+      <div id="sky-decorations" class="sky-decorations"></div>
+    </div>
+    <main class="shell">
+      <header class="hud">
+        <div class="title-row">
+          <h1>Corgi Snack Attack</h1>
+          <span class="badge" title="Work in progress">MVP</span>
+          <button type="button" id="btn-audio" class="btn-audio" aria-pressed="false" title="Mute game audio">
+            Sound
+          </button>
+        </div>
+        <p class="goal">Goal: collect every snack in the maze.</p>
+        <ul class="howto" aria-label="Controls">
+          <li><kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd> move</li>
+          <li><kbd>Space</kbd> start / replay</li>
+          <li><kbd>R</kbd> restart</li>
+        </ul>
+        <div class="stats">
+          <div class="pill" aria-live="polite">
+            <span class="pill-label">Snacks left</span>
+            <strong id="snack-count" class="pill-value">—</strong>
+          </div>
+          <div class="pill" aria-live="polite">
+            <span class="pill-label">Level</span>
+            <strong id="level-display" class="pill-value">1</strong>
+          </div>
+          <div class="pill pill-lives" aria-live="polite">
+            <span class="pill-label">Lives</span>
+            <span id="lives-display" class="lives-hearts" aria-label="Lives remaining"></span>
+          </div>
+          <p id="status" class="status" role="status"></p>
+        </div>
+      </header>
+      <div class="streak-banner-slot">
+        <div id="streak-banner" class="streak-banner">
+          <span class="streak-banner-icon">✨</span>
+          <div class="streak-banner-copy">
+            <strong id="streak-banner-title">10 Snack Streak!</strong>
+          </div>
+          <span class="streak-banner-icon">🐾</span>
+        </div>
+      </div>
+      <div class="canvas-wrap">
+        <canvas id="game" width="876" height="716" aria-label="Corgi Snack Attack playfield"></canvas>
+      </div>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>
